@@ -2,6 +2,25 @@
     <thead>
         <tr>
             <th>#</th>
+            <th>Name</th>
+            <th>Mail</th>
+            <th>phoneNumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of item; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{data.firstName}} {{data.lastName}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.phoneNumber}}</td>
+        </tr>
+    </tbody>
+</table>
+<!--  -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
             <th>Country</th>
             <th>Name</th>
             <th>Domains</th>

@@ -17,26 +17,26 @@ export class UserService {
             dateOfBirth: new Date(),
             isActive: true
         },
-        {
-            id: 2,
-            firstName: 'John',
-            lastName: 'Doe',
-            emailAddress: 'john@mail.com',
-            phoneNumber: '08023498989',
-            gender: 'Male',
-            dateOfBirth: new Date(),
-            isActive: false
-        },
-        {
-            id: 3,
-            firstName: 'Mary',
-            lastName: 'Doe',
-            emailAddress: 'mary@gmail.com',
-            phoneNumber: '07081212121',
-            gender: 'Female',
-            dateOfBirth: new Date(),
-            isActive: true
-        }
+        // {
+        //     id: 2,
+        //     firstName: 'John',
+        //     lastName: 'Doe',
+        //     emailAddress: 'john@mail.com',
+        //     phoneNumber: '08023498989',
+        //     gender: 'Male',
+        //     dateOfBirth: new Date(),
+        //     isActive: false
+        // },
+        // {
+        //     id: 3,
+        //     firstName: 'Mary',
+        //     lastName: 'Doe',
+        //     emailAddress: 'mary@gmail.com',
+        //     phoneNumber: '07081212121',
+        //     gender: 'Female',
+        //     dateOfBirth: new Date(),
+        //     isActive: true
+        // }
     ];
 
     constructor(private http: HttpClient) { }

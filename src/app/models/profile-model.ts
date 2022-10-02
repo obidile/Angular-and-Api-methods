@@ -1,11 +1,11 @@
 export class ProfileModel {
-    createdAt: Date;
-    firstName: string;
-    avatar: string;
-    lastName: string;
-    email: string;
-    phoneNumber: string;
-    gender: string;
-    dateOfBirth: Date;
-    id: string;
+    public createdAt: Date;
+    public firstName: string;
+    public avatar: string;
+    public lastName: string;
+    public email: string;
+    public phoneNumber: string;
+    public gender: string;
+    public dateOfBirth: Date;
+    public id: string;
 }

@@ -12,7 +12,7 @@ export class profileService {
     constructor(private http: HttpClient) { }
 
     create(model: ProfileModel) {
-        // var body = JSON.stringify(model);
+        var body = JSON.stringify(model);
         return this.http.post<ProfileModel[]>(this.url, ModuleKind);
     }
 

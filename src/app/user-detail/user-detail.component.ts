@@ -20,7 +20,7 @@ export class UserDetailComponent implements OnInit, OnDestroy {
     this.routeSub = this.activatedRoute.params.subscribe(param => {
       this.id = param['id'];
       this.getData();
-    });
+    }); 
   }
 
   getData() {

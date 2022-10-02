@@ -40,8 +40,8 @@
                 <tbody>
                     <tr *ngFor="let item of userList; let i = index;">
                         <td>{{i+1}}</td>
-                        <td><a [routerLink]="['/user-detail/', item.id]">{{item.firstName}} {{item.lastName}}</a></td>
-                        <td>{{item.dateOfBirth | date:'dd-MMM-yyyy'}}</td>
+                        <td><a routerLink="/user-detail/', item.id">{{item.firstName}} {{item.lastName}}</a></td>
+                        <!-- <td>{{item.dateOfBirth | date:'dd-MMM-yyyy'}}</td> -->
                         <td>{{item.gender}}</td>
                         <td>{{item.emailAddress}}</td>
                         <td>{{item.phoneNumber}}</td>
@@ -61,7 +61,7 @@
                 </tbody>
             </table>
 
-
+<!-- 
             <div class="clearfix">
                 <div class="hint-text">Showing <b>{{userList?.length}}</b> entries</div>
                 <ul class="pagination">
@@ -73,7 +73,7 @@
                     <li class="page-item"><a href="#" class="page-link">5</a></li>
                     <li class="page-item"><a href="#" class="page-link">Next</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
