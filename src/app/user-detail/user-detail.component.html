@@ -1,0 +1,67 @@
+<main role="main" class="container">
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Other Details</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">First Name</strong>
+                        {{user?.firstName}}
+                    </p>
+                </div>
+
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Last Name</strong>
+                        {{user?.lastName}}
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Date Of Birth</strong>
+                        {{user?.dateOfBirth | date:'dd-MMM-yyyy' }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Mail</strong>
+                        {{user?.emailAddress}}
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Phone-No</strong>
+                        {{user?.phoneNumber}}
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Status</strong>
+                        {{user?.isActive}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="media text-muted pt-3">
+                    <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Gender</strong>
+                        {{user?.gender}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

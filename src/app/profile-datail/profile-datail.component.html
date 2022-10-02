@@ -1,0 +1,66 @@
+<main role="main" class="container">
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Other Details</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">First Name</strong>
+                        {{data?.firstName}}
+                    </p>
+                </div>
+
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Last Name</strong>
+                        {{data?.lastName}}
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Date Of Birth</strong>
+                        {{data?.dateOfBirth | date:'dd-MMM-yyyy' }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Mail</strong>
+                        {{data?.email}}
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Phone-No</strong>
+                        {{data?.phoneNumber}}
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Status</strong>
+                        {{data?.gender}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Gender</strong>
+                        {{data?.phoneNumber}}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">Gender</strong>
+                        {{data?.createdAt}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

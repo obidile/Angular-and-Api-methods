@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Country</th>
+            <th>Name</th>
+            <th>Domains</th>
+            <th>web_pages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{item.country}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <p *ngFor="let domain of item.domains">{{domain}}</p>
+            </td>
+            <td>{{item.web_pages}}</td>
+        </tr>
+    </tbody>
+</table>

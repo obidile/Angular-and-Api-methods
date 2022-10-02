@@ -1,0 +1,63 @@
+<div class="container-xl">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <button type="button" (click)="openForm()" class="btn btn-secondary"><i class="material-icons">
+                                &#xE147;</i> <span>Add New User</span></button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>FullName</th>
+                        <th>Mail</th>
+                        <th>Country</th>
+                        <th>State</th>
+                        <th>Branch</th>
+                        <th>S/E</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of ownList; let i = index;">
+
+                        <td>{{i+1}}</td>
+                        <td><a href="">{{data.firstName}} {{data.lastName}}</a></td>
+                        <td>{{data.emailAddress}}</td>
+                        <td>{{data.country}}</td>
+                        <td>{{data.state}}</td>
+                        <td>{{data.branch}}</td>
+                        <!-- <td><span>&bull;</span></td> -->
+                        <td>
+                            <a href="javascript:void(0)" class="settings" ngbTooltip="Edit" (click)="openForm(data)"><i
+                                    class="material-icons">&#xE8B8;</i></a>
+                            <a href="#" class="delete" ngbTooltip="Delete" (click)="deleteRow(data)"><i
+                                    class="material-icons">&#xE5C9;</i></a>
+                        </td>
+                    </tr>
+                    <tr *ngIf="!ownList?.length">
+                        <td colspan="9 ">No record was found</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div class="clearfix">
+                <div class="hint-text">Showing <b></b> entries</div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

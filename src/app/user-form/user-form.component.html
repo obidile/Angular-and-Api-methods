@@ -1,0 +1,76 @@
+<div class="modal-header">
+    <h6 class="modal-title pull-left">{{ formData?.id ? 'Edit User' : 'Add New User' }}</h6>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="activeModal.close()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="modal-body">
+    <form [formGroup]="requestForm" name="requestForm" (ngSubmit)="onFormSubmit()" role="form" id="requestForm">
+        <!-- <p>{{ requestForm.value | json }}</p> -->
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label>Name</label>
+                <input type="text" class="form-control" formControlName="firstName" placeholder="Enter First Name"
+                    ngbAutofocus />
+                <small class="text-danger"
+                    *ngIf="form.firstName && form.firstName.invalid && form.firstName.touched">Required</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Name</label>
+                <input type="text" class="form-control" formControlName="lastName" placeholder="Enter Last Name"
+                    ngbAutofocus />
+                <small class="text-danger"
+                    *ngIf="form.lastName && form.lastName.invalid && form.lastName.touched">Required</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Mail</label>
+                <input type="email" class="form-control" formControlName="emailAddress" placeholder="emailAddress"
+                    ngbAutofocus />
+                <small class="text-danger"
+                    *ngIf="form.emailAddress && form.emailAddress.invalid && form.emailAddress.touched">Required</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Phone-No</label>
+                <input type="text" class="form-control" formControlName="phoneNumber" placeholder="phoneNumber"
+                    ngbAutofocus />
+                <small class="text-danger"
+                    *ngIf="form.phoneNumber && form.phoneNumber.invalid && form.phoneNumber.touched">Required</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label>DOB</label>
+                <input type="date" class="form-control" formControlName="dateOfBirth" placeholder="dateOfBirth"
+                    ngbAutofocus />
+                <small class="text-danger"
+                    *ngIf="form.dateOfBirth && form.dateOfBirth.invalid && form.dateOfBirth.touched">Required</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Active status</label>
+                <select type="text" class="form-control" formControlName="isActive" placeholder="Status" ngbAutofocus>
+                    <option value="Male">Active</option>
+                    <option value="Female">Not-active</option>
+                </select>
+                <small class="text-danger"
+                    *ngIf="form.isActive && form.isActive.invalid && form.isActive.touched">Required</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Gender</label>
+                <select type="text" class="form-control" formControlName="gender" placeholder="gender" ngbAutofocus>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <small class="text-danger"
+                    *ngIf="form.gender && form.gender.invalid && form.gender.touched">Required</small>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="activeModal.close()">
+        Close
+    </button>
+    <button [disabled]="requestForm.invalid" type="submit" form="requestForm" class="btn btn-success">
+        Save changes
+    </button>
+</div>
