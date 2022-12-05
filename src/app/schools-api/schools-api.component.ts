@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SchoolModel } from '../models/school-model';
-import { ProfileModel } from "../models/profile-model";
 import { SchoolsServices } from '../services/schools.service';
 
 @Component({
@@ -11,8 +10,6 @@ import { SchoolsServices } from '../services/schools.service';
 })
 export class SchoolsApiComponent implements OnInit {
   data: SchoolModel[];
-   item: ProfileModel[];
-
 
   constructor(private schoolsService: SchoolsServices, private modelService: NgbModal) { }
 
@@ -21,9 +18,6 @@ export class SchoolsApiComponent implements OnInit {
       this.data = data;
     });
     
-    // this.schoolsService.getApi().subscribe((data)=>{
-    //   this.item = data;
-    // })
   }
 
 }

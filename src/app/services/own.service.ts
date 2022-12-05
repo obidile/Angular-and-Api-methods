@@ -7,18 +7,12 @@ import { Injectable } from "@angular/core";
   providedIn: 'root'
 })
 export class OwnService {
-  // create(formData: any) {
-  //   throw new Error('Method not implemented.');
-  // }
-  // edit(formData: any) {
-  //   throw new Error('Method not implemented.');
-  // }
   data: OwnModel[] = [
     {
       id: 1,
       firstName: 'chibuike',
       lastName: 'obidile',
-      emailAddress: 'sammy@mail.com',
+      emailAddress: 'samuelchibuike51@gmail.com',
       country: 'Nigeria',
       state: 'Lagos',
       branch: 'ojodu',

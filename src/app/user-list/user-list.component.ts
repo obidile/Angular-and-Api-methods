@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserModel } from '../models/user-model';
-import { SchoolModel } from '../models/school-model';
 import { UserService } from '../services/user.service';
 import { UserFormComponent } from '../user-form/user-form.component';
 

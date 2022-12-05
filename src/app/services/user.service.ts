@@ -9,34 +9,14 @@ export class UserService {
     data: UserModel[] = [
         {
             id: 1,
-            firstName: 'Reuben',
-            lastName: 'keye',
-            emailAddress: 'test@mail.com',
-            phoneNumber: '09089898989',
+            firstName: 'john',
+            lastName: 'doe',
+            emailAddress: 'johndoe@mail.com',
+            phoneNumber: '09010101010',
             gender: 'Male',
             dateOfBirth: new Date(),
             isActive: true
         },
-        // {
-        //     id: 2,
-        //     firstName: 'John',
-        //     lastName: 'Doe',
-        //     emailAddress: 'john@mail.com',
-        //     phoneNumber: '08023498989',
-        //     gender: 'Male',
-        //     dateOfBirth: new Date(),
-        //     isActive: false
-        // },
-        // {
-        //     id: 3,
-        //     firstName: 'Mary',
-        //     lastName: 'Doe',
-        //     emailAddress: 'mary@gmail.com',
-        //     phoneNumber: '07081212121',
-        //     gender: 'Female',
-        //     dateOfBirth: new Date(),
-        //     isActive: true
-        // }
     ];
 
     constructor(private http: HttpClient) { }
